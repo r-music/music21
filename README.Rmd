@@ -22,7 +22,6 @@ The goal of `music21` is to have an pipe-able API of [music21 python library](ht
 
 In practice, `music21` is more limited than the python library. However, it is really easy to run any functions from `music21` inside R.
 
-
 ## Installation
 
 You can install `music21` from github with:
@@ -30,6 +29,12 @@ You can install `music21` from github with:
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("jtrecenti/music21")
+```
+
+To use the `plot` and `view` methods, you'll also have to install `lilypond`:
+
+```{bash, eval=FALSE}
+sudo apt-get install lilypond
 ```
 
 ## `music21` object

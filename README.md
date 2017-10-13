@@ -21,6 +21,12 @@ You can install `music21` from github with:
 devtools::install_github("jtrecenti/music21")
 ```
 
+To use the `plot` and `view` methods, you'll also have to install `lilypond`:
+
+``` bash
+sudo apt-get install lilypond
+```
+
 `music21` object
 ----------------
 
