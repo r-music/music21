@@ -2,7 +2,7 @@
 
 sudo: required
 before_install:
-  - pip install music21
+  - sudo pip install music21
 
 addons:
   apt:
@@ -16,7 +16,6 @@ addons:
       - libleptonica-dev
       - tesseract-ocr-eng
       - r-cran-rgdal
-
 
 language: R
 
