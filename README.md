@@ -14,6 +14,14 @@ In practice, `music21` is more limited than the python library. However, it is r
 Installation
 ------------
 
+`music21` package is based on the `music21` python library. On Ubuntu:
+
+``` bash
+sudo apt-get install python-pip
+sudo pip install pip --upgrade
+sudo pip install music21
+```
+
 You can install `music21` from github with:
 
 ``` r
