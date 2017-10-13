@@ -1,0 +1,16 @@
+Package: music21
+Title: R port to music21 python library
+Version: 0.0.0.9000
+Authors@R: person("Julio", "Trecenti", email = "j@jtrecenti.com", role = c("aut", "cre"))
+Description: music21 is an open source software library for structured music 
+  data IO and manipulation. The music21 package provides access to the complete 
+  music21 API from within R.
+Depends: R (>= 3.3.1)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
+Imports: reticulate,
+    tools,
+    magick,
+    magrittr
