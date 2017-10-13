@@ -1,0 +1,89 @@
+---
+output: github_document
+---
+
+[![Travis-CI Build Status](https://travis-ci.org/jtrecenti/music21.svg?branch=master)](https://travis-ci.org/jtrecenti/music21)
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+**Under development. Please contribute.**
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# music21
+
+The goal of `music21` is to have an pipe-able API of [music21 python library](http://web.mit.edu/music21/doc/index.html). It uses RStudio's excellent [`reticulate`](https://github.com/rstudio/reticulate) package in the backend.
+
+In practice, `music21` is more limited than the python library. However, it is really easy to run any functions from `music21` inside R.
+
+
+## Installation
+
+You can install `music21` from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("jtrecenti/music21")
+```
+
+## `music21` object
+
+```{r}
+library(music21)
+music21
+```
+
+`music21` object stores the python module. It is possible to run any function from it just by using `$`, treating it as a Reference Class object.
+
+```{r, results="asis"}
+note <- music21$note$Note("C#")
+note
+```
+
+```{r note, fig.width=2, fig.height=1.5}
+note %>% 
+  plot()
+```
+
+## Example
+
+### Show bach chorales
+
+```{r message=FALSE}
+get_composer("bach") %>% 
+  head()
+```
+
+Let's get one of these paths and read:
+
+```{r}
+bach_music <- get_composer("bach")[61] %>% 
+  read_music()
+```
+
+### Plot bwv165.6 music
+
+Now let's plot the music!
+
+```{r bach, fig.width=6, fig.height=5}
+bach_music %>% 
+  plot()
+```
+
+In RStudio, you can use the `view` function to see the music inside viewer pane.
+
+### Print bwv165.6 music (soprano part)
+
+```{r}
+bach_music[[1]]
+```
+
+
+
+
