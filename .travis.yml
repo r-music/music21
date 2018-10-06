@@ -10,7 +10,7 @@ before_install:
 addons:
   apt:
     packages:
-      - python3.7
+      - python3.6
       - lilypond
 
 language: R
