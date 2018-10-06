@@ -1,5 +1,5 @@
 
-[![Travis-CI Build Status](https://travis-ci.org/jtrecenti/music21.svg?branch=master)](https://travis-ci.org/jtrecenti/music21)
+[![Travis-CI Build Status](https://travis-ci.org/r-music/music21.svg?branch=master)](https://travis-ci.org/r-music/music21)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 **Under development. Please contribute.**
