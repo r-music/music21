@@ -5,7 +5,7 @@ Authors@R: person("Julio", "Trecenti", email = "j@jtrecenti.com", role = c("aut"
 Description: music21 is an open source software library for structured music 
   data IO and manipulation. The music21 package provides access to the complete 
   music21 API from within R.
-Depends: R (>= 3.3.1)
+Depends: R (>= 3.3)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
