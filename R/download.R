@@ -12,7 +12,7 @@
 #' get_composer("schoenberg")
 #' }
 get_composer <- function(composer, file_ext = NULL) {
-  music21$corpus$getComposer(composer, file_ext)
+  sapply(music21$corpus$getComposer(composer, file_ext), as.character)
 }
 
 #' Load music from work name

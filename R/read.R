@@ -8,6 +8,7 @@
 #'
 #' @export
 read_music <- function(file, ext = NULL) {
+  file <- as.character(file)
   if (is.null(ext)) ext <- tools::file_ext(file)
   switch (ext,
     midi = read_midi(file),
@@ -19,6 +20,7 @@ read_music <- function(file, ext = NULL) {
 #' @rdname read_music
 #' @export
 read_midi <- function(file) {
+  file <- as.character(file)
   file <- normalizePath(file)
   m <- music21$midi$translate$midiFilePathToStream(file)
   m
@@ -27,6 +29,7 @@ read_midi <- function(file) {
 #' @rdname read_music
 #' @export
 read_musicxml <- function(file) {
+  file <- as.character(file)
   file <- normalizePath(file)
   m <- music21$converter$parse(file)
   m

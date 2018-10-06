@@ -12,14 +12,6 @@ addons:
     packages:
       - python3.7
       - lilypond
-      - libmagick++-dev
-      - librsvg2-dev
-      - libwebp-dev
-      - libpoppler-cpp-dev
-      - libtesseract-dev
-      - libleptonica-dev
-      - tesseract-ocr-eng
-      - r-cran-rgdal
 
 language: R
 

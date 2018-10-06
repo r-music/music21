@@ -15,5 +15,5 @@ BugReports: https://github.com/jtrecenti/music21/issues
 SystemRequirements: Lilypond: lilypond (deb)
 Imports: reticulate,
     tools,
-    magick,
     magrittr
+Suggests: magick
