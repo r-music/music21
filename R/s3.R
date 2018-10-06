@@ -14,8 +14,7 @@ print.music21.base.Music21Object <- function(x, ...) {
 #' Shows music in the viewer pane
 #'
 #' This function uses \href{http://lilypond.org/}{lilypond} to save the music21
-#' object to a png file, then uses \code{\link{magick}} package to load the
-#' image.
+#' object to a png file, then loads the image.
 #'
 #' @param x music21 python object
 #' @param ... other options (currently ignored)
